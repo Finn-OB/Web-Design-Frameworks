@@ -22,7 +22,7 @@
     <main>
       <!-- Target 1: hero. Week 1's text, plus Compass's doodle. -->
       <section aria-labelledby="intro-heading">
-        <div class="mx-auto max-w-5xl px-5 py-[clamp(2.5rem,1.5rem+4vw,5rem)]">
+        <div class="mx-auto grid max-w-5xl grid-cols-[1.1fr_0.9fr] items-center gap-10 px-5 py-[clamp(2.5rem,1.5rem+4vw,5rem)]">
           <div>
             <p
               class="font-display text-base font-bold tracking-[0.08em] text-link uppercase"
@@ -77,7 +77,7 @@
           >
             Monday
           </h2>
-          <div class="p-4">
+          <div class="grid grid-cols-2 gap-4 p-4">
             <article
               class="flex flex-col gap-2 rounded-2xl border-(length:--rule) border-ink bg-paper p-5"
             >
@@ -168,7 +168,7 @@
           >
             Tuesday
           </h2>
-          <div class="p-4">
+          <div class="grid grid-cols-2 gap-4 p-4">
             <article
               class="flex flex-col gap-2 rounded-2xl border-(length:--rule) border-ink bg-paper p-5"
             >
@@ -255,7 +255,7 @@
           >
             Wednesday
           </h2>
-          <div class="p-4">
+          <div class="grid grid-cols-2 gap-4 p-4">
             <article
               class="flex flex-col gap-2 rounded-2xl border-(length:--rule) border-ink bg-paper p-5"
             >
@@ -299,7 +299,8 @@
            odd while the rows stack, and right once they sit in two
            columns. -->
       <section aria-labelledby="help-heading">
-        <div class="px-5 py-20">
+
+        <div class="grid grid-cols-[minmax(5rem,12%)_1fr] gap-6 px-5 py-20">
           <div aria-hidden="true"></div>
           <h2
             id="help-heading"
@@ -308,9 +309,10 @@
             How Compass can help
           </h2>
         </div>
-        <ul class="border-y-(length:--rule) border-ink">
+
+        <ul class="grid grid-cols-2 border-y-(length:--rule) border-ink">
           <li class="bg-paper text-ink">
-            <div class="px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
+            <div class="grid grid-cols-[minmax(5rem,12%)_1fr] gap-6 px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
               <span
                 class="font-display text-[clamp(2rem,1.5rem+2vw,3rem)] leading-none font-black"
                 aria-hidden="true"
@@ -353,7 +355,7 @@
           <li
             class="border-l-(length:--rule) border-ink bg-green text-on-light"
           >
-            <div class="px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
+            <div class="grid grid-cols-[minmax(5rem,12%)_1fr] gap-6 px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
               <span
                 class="font-display text-[clamp(2rem,1.5rem+2vw,3rem)] leading-none font-black"
                 aria-hidden="true"
@@ -396,7 +398,7 @@
           <li
             class="border-t-(length:--rule) border-ink bg-ink-deep text-on-dark"
           >
-            <div class="px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
+            <div class="grid grid-cols-[minmax(5rem,12%)_1fr] gap-6 px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
               <span
                 class="font-display text-[clamp(2rem,1.5rem+2vw,3rem)] leading-none font-black"
                 aria-hidden="true"
@@ -437,7 +439,7 @@
           <li
             class="border-t-(length:--rule) border-l-(length:--rule) border-ink bg-pink text-on-light"
           >
-            <div class="px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
+            <div class="grid grid-cols-[minmax(5rem,12%)_1fr] gap-6 px-5 py-[clamp(2.25rem,1.5rem+3vw,4rem)]">
               <span
                 class="font-display text-[clamp(2rem,1.5rem+2vw,3rem)] leading-none font-black"
                 aria-hidden="true"
@@ -477,6 +479,14 @@
           </li>
         </ul>
       </section>
+
+      <div class="grid grid-cols-3 gap-4 bg-stone-200 p-6">
+        <div class="bg-lime p-4">Adviser one</div>
+        <div class="bg-green p-4">Adviser two</div>
+        <div class="bg-pink p-4">Adviser three</div>
+        <div class="col-span-3 bg-ink-deep p-4 text-on-dark">Book an appointment</div>
+      </div>
+
     </main>
   </body>
 </html>
